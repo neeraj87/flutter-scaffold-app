@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import '../widgets/navigation_widget.dart';
+
 class FlipperWidget extends StatefulWidget {
   @override
   _FlipperWidgetState createState() => _FlipperWidgetState();
@@ -39,6 +41,7 @@ class _FlipperWidgetState extends State<FlipperWidget>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavigationDrawer(),
       appBar: AppBar(
         title: Text("Flipper Widget"),
       ),
